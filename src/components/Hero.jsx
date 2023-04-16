@@ -355,6 +355,7 @@ export function Hero() {
               <li>
                 <Image
                   src="chevrolet-logo.svg"
+                  alt="no internet"
                   className="h-8"
                   width={100}
                   height={20}
@@ -367,6 +368,7 @@ export function Hero() {
               <li>
                 <Image
                   src="ford-8.svg"
+                  alt="no internet"
                   className="h-8"
                   width={100}
                   height={20}
