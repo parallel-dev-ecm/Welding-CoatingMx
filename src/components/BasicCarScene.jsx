@@ -3,9 +3,13 @@ import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import { Box } from '@react-three/drei'
 
-function BasicCarScene(props) {
+function BasicSceneWithObject(props) {
   function Porsche(props) {
     let gltf = useGLTF('./porsche.glb')
+    return <primitive object={gltf.scene} {...props} />
+  }
+  function RoboticArm(props) {
+    let gltf = useGLTF('./robotic_arm.glb')
     return <primitive object={gltf.scene} {...props} />
   }
   return (
@@ -21,11 +25,11 @@ function BasicCarScene(props) {
             rotation={[0, 11, -0.5]}
           />
         ) : (
-          console.log('No porsche')
+          <RoboticArm scale={3} />
         )}
       </Canvas>
     </>
   )
 }
 
-export default BasicCarScene
+export default BasicSceneWithObject

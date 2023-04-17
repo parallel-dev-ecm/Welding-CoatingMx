@@ -442,12 +442,12 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Tailored experience to your needs.
+            Keep track of everything.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Customize your profile to your liking and get only the notifications
-            you really want. Save yourself some time and effort and be up to
-            date with the updates done to your parts.
+            Stay up to date with every update on the jobs you requested. Make
+            appointments and in case you need assistance you can contact our
+            customer support via chat in the app.
           </p>
         </div>
       </Container>

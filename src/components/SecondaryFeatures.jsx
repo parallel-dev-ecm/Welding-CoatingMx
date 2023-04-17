@@ -4,40 +4,21 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Keep track of your requested jobs',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
-    icon: DeviceArrowIcon,
-  },
-  {
-    name: 'Build a balanced portfolio',
-    description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Whether its only a paint job or multiple coating services, you can always stay up to date with each update on your app. ',
     icon: DeviceCardsIcon,
   },
+
   {
-    name: 'Trade in real-time',
-    description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+    name: 'Schedule jobs easily',
+    description: 'Make appointments through your app in quick-easy manner',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
-    description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+    name: 'Keep a log of everything',
+    description: 'Keep a record of every job you have had with us',
     icon: DeviceListIcon,
-  },
-  {
-    name: 'Encrypted and anonymized',
-    description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
-    icon: DeviceLockIcon,
-  },
-  {
-    name: 'Portfolio tracking',
-    description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
-    icon: DeviceChartIcon,
   },
 ]
 
@@ -196,11 +177,16 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Why us?
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            Our team of highly skilled and experienced professionals is
+            dedicated to delivering the highest quality results, on-time and
+            within budget. We use the latest technology and techniques to ensure
+            that every project is completed to the highest standards. Whether
+            you need welding services for large-scale industrial projects or
+            coating services for your home or business, we have the expertise to
+            meet your needs.
           </p>
         </div>
         <ul

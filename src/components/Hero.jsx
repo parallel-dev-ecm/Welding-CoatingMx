@@ -10,7 +10,7 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
-import BasicCarScene from './BasicCarScene'
+import BasicSceneWithObject from './BasicCarScene'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -278,7 +278,7 @@ function AppDemo() {
               <div>Paint change | Dent removal </div>
             </div>
             <div className="basicCarScene z-10">
-              <BasicCarScene carModel="porsche" />
+              <BasicSceneWithObject carModel="porsche" />
             </div>
 
             <div className="mt-3 divide-y divide-gray-100 text-sm">
@@ -337,16 +337,6 @@ export function Hero() {
               role="list"
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
             >
-              {[
-                ['TechCrunch', logoTechcrunch],
-                ['Wired', logoWired],
-                ['Fast Company', logoFastCompany],
-                ['HuffPost', logoHuffpost, 'hidden xl:block'],
-              ].map(([name, logo, className]) => (
-                <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} className="h-8" unoptimized />
-                </li>
-              ))}
               <li>
                 <Image
                   src="chevrolet-logo.svg"
