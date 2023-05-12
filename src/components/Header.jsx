@@ -118,13 +118,13 @@ export function Header() {
               )}
             </Popover>
 
-            <Button
+            {/* <Button
               href="/login"
               variant="outline"
               className="hidden text-white  hover:bg-white hover:text-black lg:block "
             >
               Log in
-            </Button>
+            </Button> */}
           </div>
         </Container>
       </nav>
