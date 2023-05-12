@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import { useRef } from 'react'
 
 function MenuIcon(props) {
   return (
@@ -49,11 +48,12 @@ export function Header() {
   return (
     <header>
       <nav>
-        <Container className="relative z-50 flex justify-between py-8">
-          <div className="relative z-10 flex items-center gap-16">
+        <Container className="relative z-50 flex justify-between border-b py-8  ">
+          <div className="relative z-10 flex items-center  gap-16 text-white">
             <Link href="/" aria-label="Home">
               Welding and Coating de México
             </Link>
+
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
             </div>
@@ -99,16 +99,11 @@ export function Header() {
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="#features">
-                              Sobre Nostros
+                              Acerca de nostros
                             </MobileNavLink>
                             <MobileNavLink href="#reviews">
                               Testimonios
                             </MobileNavLink>
-                            <MobileNavLink href="#pricing">
-                              Pricing
-                            </MobileNavLink>
-
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">
@@ -122,7 +117,12 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
+
+            <Button
+              href="/login"
+              variant="outline"
+              className="hidden text-white  hover:bg-white hover:text-black lg:block "
+            >
               Log in
             </Button>
           </div>

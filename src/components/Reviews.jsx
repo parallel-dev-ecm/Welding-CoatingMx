@@ -10,6 +10,7 @@ import {
 } from 'framer-motion'
 
 import { Container } from '@/components/Container'
+import PageDivider from './PageDivider'
 
 const reviews = [
   {
@@ -244,31 +245,33 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-900" />
     </div>
   )
 }
 
 export function Reviews() {
   return (
-    <section
-      id="reviews"
-      aria-labelledby="reviews-title"
-      className="pb-16 pt-20 sm:pb-24 sm:pt-32"
-    >
-      <Container>
-        <h2
-          id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
-        >
-          Some of our user reviews:
-        </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have worked with us.
-        </p>
-        <ReviewGrid />
-      </Container>
-    </section>
+    <>
+      <section
+        id="reviews"
+        aria-labelledby="reviews-title"
+        className="pb-16 pt-20 sm:pb-24 sm:pt-32"
+      >
+        <Container>
+          <h2
+            id="reviews-title"
+            className="text-3xl font-medium tracking-tight  text-gray-100 sm:text-center"
+          >
+            Some of our user reviews:
+          </h2>
+          <p className="mt-2 text-lg text-gray-400 sm:text-center">
+            Thousands of people have worked with us.
+          </p>
+          <ReviewGrid />
+        </Container>
+      </section>
+    </>
   )
 }

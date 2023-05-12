@@ -176,10 +176,10 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-gray-900">
+          <h2 className="text-3xl font-medium tracking-tight text-gray-200">
             Why us?
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
+          <p className="mt-2 text-lg text-gray-300">
             Our team of highly skilled and experienced professionals is
             dedicated to delivering the highest quality results, on-time and
             within budget. We use the latest technology and techniques to ensure
@@ -199,10 +199,10 @@ export function SecondaryFeatures() {
               className="rounded-2xl border border-gray-200 p-8"
             >
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900">
+              <h3 className="mt-6 font-semibold text-gray-200">
                 {feature.name}
               </h3>
-              <p className="mt-2 text-gray-700">{feature.description}</p>
+              <p className="mt-2 text-gray-300">{feature.description}</p>
             </li>
           ))}
         </ul>

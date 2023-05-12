@@ -1,6 +1,7 @@
 import { forwardRef } from 'react'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const baseStyles = {
   solid:
@@ -32,8 +33,16 @@ export const Button = forwardRef(function Button(
   )
 
   return href ? (
-    <Link ref={ref} href={href} className={className} {...props} />
+    <AnimatePresence>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link ref={ref} href={href} className={className} {...props} />
+      </motion.div>
+    </AnimatePresence>
   ) : (
-    <button ref={ref} className={className} {...props} />
+    <AnimatePresence>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <button ref={ref} className={className} {...props} />
+      </motion.div>
+    </AnimatePresence>
   )
 })
