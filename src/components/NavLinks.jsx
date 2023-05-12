@@ -9,7 +9,7 @@ export function NavLinks() {
     ['Acerca de nosotros', '#features'],
     ['Testimonios', '#reviews'],
   ].map(([label, href], index) => (
-    <AnimatePresence>
+    <AnimatePresence key={label}>
       <motion.div whileHover={{ scale: 1.2 }}>
         <Link
           key={label}
